@@ -1,0 +1,54 @@
+body {
+  position: absolute;
+  background: url('../images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body > .ui.red.inverted.segment {
+  box-sizing: border-box;
+  height: 380px;
+  width: 450px;
+  position: relative;
+  transition: transform (-50%, -50%);
+  left: 95%;
+  top: 20%;
+}
+
+.ui.input.focus {
+  margin: 8px;
+  box-sizing: border-box;
+  width: 340px;
+}
+
+.ui.checkbox {
+  margin: 20px;
+}
+.ui.inverted.yellow.button {
+  margin: 13px;
+  position: absolute;
+  transition: transform (-100%, 0);
+  left: 64%;
+}
+
+.ui.vertical.white.segment {
+  margin-top: 18px;
+  position: relative;
+}
+
+.ui.vertical.white.segment > .ui.inverted.blue.button {
+  position: relative;
+  transition: transform (-100%, 0);
+  left: 8%;
+  box-sizing: border-box;
+  width: 300px;
+  margin: 0px;
+}
+
+.ui.red.inverted.segment > h3 {
+  text-align: center;
+}
+
+.ui.vertical.white.segment {
+  margin: 0px;
+}
