@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>user_audit</title>
+    <link rel="stylesheet" href="{% static  "css/semantic.css"%}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static  "css/semantic.min.css"%}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static  "css/profile.css"%}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static  "css/user_audit.css"%}" media="screen" title="no title" charset="utf-8">
+
+  </head>
+  <body>
+        <div class="ui fixed inverted menu">
+            <a href="homepage.html" class="item">Home</a>
+            <a href="user_download.html" class="item">My Page</a>
+            <a href="visitor_contributions.html" class="item">Contribution</a>
+
+            <div class="ui category search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="搜寻文章...">
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>
+        </div>
+
+        <div class="ui vertical basic segment masthead">
+            <div class="ui inverted text menu">
+                <div class="right menu">
+                </div>
+            </div>
+
+            <h1 class="ui inverted center aligned header slogan">
+                Integrated Media Center
+                <p class="inverted sub header">
+                    Be Here Now
+                </p>
+            </h1>
+        </div>
+        <div class="ui vertical basic segment">
+            <div class="ui grid">
+                <div class="three wide column">
+                  <div class="ui segment">
+                    <div class="ui image">
+                      <img src="../static/images/10.jpg" alt="" />
+                    </div>
+                    <h3>Username</h3>
+                    <p>my info</p>
+                    <p>my info</p>
+                  </div>
+                    <div class="ui segment">
+                      <div class="ui vertical fluid tabular menu">
+                        <a href="user_upload.html" class="active item">Upload</a>
+                        <a href="user_download.html" class="item">Download</a>
+                        <a href="user_audit.html" class="item">Audit</a>
+                        <a href="user_notifications.html" class="item">Notifications</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="thirteen wide stretched column">
+                  <div class="ui segment">
+                    <div class="ui inverted segment" style="background-color:rgb(98, 97, 97)">
+                      <a href="user_audit_detail.html">
+                        <h2 class="ui inverted header" style="margin-top: 8px; margin-bottom: 0px" href="user_audit_detail.html">
+                          This ia a title
+                        </h2>
+                        <h4 class="ui inverted header">Author: Nexus</h4>
+                      </a>
+                      <p>Date: 11/5/2017</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <button type="button" name="button" class="ui inverted circular green button" style="margin-right: 40px">Approve</button>
+                      <button type="button" name="button" class="ui inverted circular red button">Delete</button>
+                    </div>
+
+                    <div class="ui inverted segment" style="background-color:rgb(55, 53, 53)">
+                      <a href="#">
+                        <h2 class="ui inverted header" style="margin-top: 8px; margin-bottom: 0px">
+                          This ia a title
+                        </h2>
+                        <h4 class="ui inverted header">Author: Nexus</h4>
+                      </a>
+                      <p>Date: 11/5/2017</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <button type="button" name="button" class="ui inverted circular green button" style="margin-right: 40px">Approve</button>
+                      <button type="button" name="button" class="ui inverted circular red button">Delete</button>
+                    </div>
+
+                    <div class="ui inverted segment">
+                      <a href="#">
+                        <h2 class="ui inverted header" style="margin-top: 8px; margin-bottom: 0px">
+                          This ia a title
+                        </h2>
+                        <h4 class="ui inverted header">Author: Nexus</h4>
+                      </a>
+                      <p>Date: 11/5/2017</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </p>
+                      <button type="button" name="button" class="ui inverted circular green button" style="margin-right: 40px">Approve</button>
+                      <button type="button" name="button" class="ui inverted circular red button">Delete</button>
+                    </div>
+
+                  </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical very padded inverted segment">
+          <div class="ui inverted center aligned segment">
+            <h4>Integrated Media Center</h4>
+            <p>
+              All rights reserved.
+            </p>
+
+          </div>
+        </div>
+        <script src="../static/js/jquery.js"></script>
+        <script src="../static/js/semantic.js"></script>
+        <script>
+          (function($) {
+            // 页面加载后的工作
+            console.log("2222222");
+            $("div.vertical a").on("click", function(e) {
+              e.preventDefault();
+              // 可以在这里判断被点击的a标签是否已经激活
+              $(".active").removeClass("active");
+              $(this).closest("a").addClass("active")
+              $($(this).attr("href")).addClass("active");
+            })
+          })(jQuery);
+        </script>
+  </body>
+</html>

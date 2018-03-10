@@ -1,0 +1,299 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome to IMC</title>
+        <link rel="stylesheet" href="{% static  "css/semantic.css"%}" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="{% static  "css/visitor.css"%}" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div class="ui vertical basic segment masthead">
+            <div class="ui inverted text menu">
+                <div class="right menu">
+                    <a href="login.html"><button type="button" name="button" onclick="login.html" class="ui inverted circular button">Logout</button></a>
+                </div>
+            </div>
+
+            <h1 class="ui inverted center aligned header slogan">
+                Integrated Media Center
+                <p class="inverted sub header">
+                    Be Here Now
+                </p>
+                <a href="{% url 'visitor' %}"> <button type="button" name="button" class="ui red circular button" >Join Us</button></a>
+            </h1>
+        </div>
+
+        <div class="ui vertical basic segment recommended">
+            <h2 class="ui center aligned header">What's New?</h2>
+            <div class="ui three column grid container">
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/4.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            看一看
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/5.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            看一看
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/6.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            看一看
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/7.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            看一看
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/8.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            看一看
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/9.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            看一看
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ui vertical basic segment recommended" style="margin-top: 30px">
+            <h2 class="ui center aligned header">Broadcast</h2>
+            <div class="ui one column grid container">
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/4.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            40%get√
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+
+        </div>
+
+        <div class="ui vertical basic segment recommended" style="margin-top: 30px">
+            <h2 class="ui center aligned header">TV Station</h2>
+            <div class="ui three column grid container">
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/4.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            40%get√
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/5.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            40%get√
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/6.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            40%get√
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/7.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            40%get√
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/8.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            40%get√
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui inverted segment card-view" style="background: url('../static/images/9.jpg');background-size: cover;background-repeat: no-repeat;">
+                        <h3 class="ui header title">Title's here</h3>
+                        <h4 class="ui header">Username</h4>
+                        <div class="ui divider"></div>
+                        <div class="ui red circular label">
+                            40%get√
+                        </div>
+                        <span>
+                            10k
+                            <i class="icon unhide"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ui vertical basic segment recommended" style="margin-top: 30px">
+            <h2 class="ui center aligned header">Campus Scenery</h2>
+            <div class="ui four column grid container">
+                <div class="column">
+                    <div class="ui circular image">
+                      <img src="../static/images/bg.png" alt="" />
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui circular image">
+                      <img src="../static/images/bg.png" alt="" />
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui circular image">
+                      <img src="../static/images/bg.png" alt="" />
+
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="ui circular image">
+                      <img src="../static/images/bg.png" alt="" />
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="ui vertical very padded red segment">
+            <div class="ui grid">
+                <div class="four wide column">
+                    <div class="ui image">
+                        <img src="../static/images/rittigers(d).png" alt="" />
+                    </div>
+                </div>
+
+                <div class="eight wide column">
+                  <div class="ui vertical center aligned segment">
+                      <h3 class="ui  header">Integrated Media Center</h3>
+                      <h5>All rights reserved.</h5>
+                  </div>
+                </div>
+
+                <div class="four wide column">
+                    <div class="ui image">
+                        <img src="../static/images/LancasterUniversity.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

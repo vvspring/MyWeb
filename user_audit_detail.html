@@ -1,0 +1,77 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>user_audit_detail</title>
+    <link rel="stylesheet" href="{% static  "css/semantic.css"%}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static  "css/semantic.min.css"%}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static  "css/profile.css"%}" media="screen" title="no title" charset="utf-8">
+
+  </head>
+  <body>
+        <div class="ui fixed inverted menu">
+            <a href="homepage.html" class="item">Home</a>
+            <a href="user_download.html" class="item">My Page</a>
+            <a href="visitor_contributions.html" class="item">Contribution</a>
+
+            <div class="ui category search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="搜寻文章...">
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>
+        </div>
+
+        <div class="ui vertical basic segment" style="margin-top: 40px">
+          <div class="ui segment">
+            <div class="ui inverted segment" style="background-color:rgb(98, 97, 97)">
+              <a href="#">
+                <h2 class="ui inverted header">
+                  <div class="ui circular image">
+                    <img src="../static/images/1.jpg" alt="" />
+                  </div>
+                  This ia a title
+                </h2>
+              </a>
+              <h4 class="ui inverted header">Author: Nexus</h4>
+              <p>Date: 11/5/2017</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button type="button" name="button" class="ui inverted circular yellow button">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui vertical very padded inverted segment">
+          <div class="ui inverted center aligned segment">
+            <h4>Integrated Media Center</h4>
+            <p>
+              All rights reserved.
+            </p>
+
+          </div>
+        </div>
+        <script src="../static/js/jquery.js"></script>
+        <script src="../static/js/semantic.js"></script>
+        <script>
+          (function($) {
+            // 页面加载后的工作
+            console.log("2222222");
+            $("div.vertical a").on("click", function(e) {
+              e.preventDefault();
+              // 可以在这里判断被点击的a标签是否已经激活
+              $(".active").removeClass("active");
+              $(this).closest("a").addClass("active")
+              $($(this).attr("href")).addClass("active");
+            })
+          })(jQuery);
+        </script>
+  </body>
+</html>

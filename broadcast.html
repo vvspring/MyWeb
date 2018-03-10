@@ -1,0 +1,104 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Broadcast</title>
+    <link rel="stylesheet" href="{% static  "css/semantic.css"%}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static  "css/visitor.css"%}" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="{% static  "css/profile.css"%}" media="screen" title="no title" charset="utf-8">
+
+  </head>
+  <body>
+    <div class="ui fixed inverted menu">
+            <a href="homepage.html" class="item">Home</a>
+            <a href="user_download.html" class="item">My Page</a>
+            <a href="visitor_contributions.html" class="item">Contribution</a>
+
+            <div class="ui category search">
+              <div class="ui icon input">
+                <input class="prompt" type="text" placeholder="搜索...">
+                <i class="search icon"></i>
+              </div>
+              <div class="results"></div>
+            </div>
+    </div>
+
+    <div class="ui vertical basic segment masthead">
+        <h1 class="ui inverted center aligned header slogan">
+            Integrated Media Center
+            <p class="inverted sub header">
+                Be Here Now
+            </p>
+        </h1>
+    </div>
+
+    <div class="ui one column grid container">
+      <div class="column">
+
+      <div class="ui divided items">
+        <div class="item">
+          <div class="image">
+            <img src="../static/images/8.jpg">
+          </div>
+          <div class="content">
+            <a class="header">12 Years a Slave</a>
+            <div class="meta">
+              <span class="cinema">Union Square 14</span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="extra">
+              <div class="extra">
+                <div class="ui right floated primary button">Click<i class="right chevron icon"></i> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="../static/images/8.jpg">
+          </div>
+          <div class="content">
+            <a class="header">My Neighbor Totoro</a>
+            <div class="meta">
+              <span class="cinema">IFC Cinema</span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="extra">
+              <div class="ui right floated primary button">Click<i class="right chevron icon"></i> </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="../static/images/8.jpg">
+          </div>
+          <div class="content">
+            <a class="header">Watchmen</a>
+            <div class="meta">
+              <span class="cinema">IFC</span>
+            </div>
+            <div class="description">
+              <p></p>
+            </div>
+            <div class="extra">
+              <div class="ui right floated primary button">Click<i class="right chevron icon"></i> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="ui vertical very padded inverted segment">
+      <div class="ui inverted center aligned segment">
+        <h4>Integrated Media Center</h4>
+        <p>All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
