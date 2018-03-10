@@ -1,0 +1,101 @@
+.ui.vertical.basic.segment.masthead {
+   margin-top: 40px;
+    margin-bottom: -30px;
+    height: 400px;
+    background: url('../images/header.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*.ui.inverted.circular.button {
+   position: absolute;
+   top: 8%;
+   left: 80%;
+}*/
+
+.ui.inverted.center.aligned.header.slogan {
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+images/background-bjtuwh.jpg
+.ui.red.circular.button {
+    width: 220px;
+}
+
+.ui.header.logo {
+    font-size: 30px;
+    color: rgb(196, 196, 196);
+}
+
+/*.ui.inverted.center.aligned.header.slogan > .ui.red.circular.button {
+  margin-top: 100px;
+}*/
+.ui.inverted.segment.card-view {
+   box-sizing: border-box;
+    height: 300px;
+}
+
+.ui.vertical.basic.segment.recommended > .ui.center.aligned.header {
+    font-size: 40px;
+    color: rgb(56, 56, 56);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ui.header.title {
+    margin-bottom: 100px;
+}
+
+.four.wide.column {
+    position: relative;
+}
+
+.ui.inverted.red.basic.segment.people-say > .ui.center.aligned.header {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ui.inverted.red.basic.segment.people-say > .ui.grid {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.ui.circular.inverted.segment > .ui.inverted.header {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+
+}
+
+.icon.red.inverted.circular.star {
+    position: absolute;
+    transform: translate(-100%,-100%);
+    left: 100%;
+    top: 100%;
+}
+
+/*.ui.inverted.red.basic.segment.people-say > .ui.inverted.red.circular.button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+}*/
+
+.ui.vertical.very.padded.red.segment {
+  box-sizing: border-box;
+  height: 70px;
+}
+
+.eight.wide.column > .ui.vertical.center.aligned.segment {
+  margin: 30px;
+}

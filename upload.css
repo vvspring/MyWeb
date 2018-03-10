@@ -1,0 +1,38 @@
+body {
+  background-color: #FFC125;
+  }
+
+.ui.segment {
+  border: 30px;
+}
+
+.ui.category.search {
+  position: relative;
+  left: 40%;
+  box-sizing: border-box;
+  width: 200px; <!--没反应？？！！--》
+}
+
+.ui.grid {
+  margin: 18px;
+}
+
+
+.icon.red.inverted.circular.star {
+  position: absolute;
+  left: 280px;
+  top: 7%;
+}
+
+
+.ui.inverted.circular.yellow.button {
+  margin: 20px;
+  position: relative;
+  left: 15%;
+}
+
+.ui.padded.input.focus {
+  box-sizing: border-box;
+  height: 100px;
+  width: 300px;
+}
